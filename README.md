@@ -25,7 +25,7 @@ B
 k estimator is: 1
 Rejections list according to Holm procedure: [5]
 ```
-Remark: The count in Holm procedure starts from 0.
+Remark: the count in Holm procedure starts from 0.
 
 ## Release History
 * 0.1.0 The first proper release.
