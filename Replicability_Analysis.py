@@ -64,8 +64,8 @@ def main():
     alpha = raw_input("Enter significance level: ")
     alpha = float(alpha)
     method = raw_input("Enter p-value combination method (B for Bonferroni, F for Fisher): ")
-    print "k estimator is: ", find_k_estimator(pvals, alpha, method)
-    print "Rejections list according to Holm procedure: ", Holm(pvals, alpha)
+    print "The k estimator for the number of datasets with effect is: ", find_k_estimator(pvals, alpha, method)
+    print "The rejections list according to the Holm procedure is: ", Holm(pvals, alpha)
 
 if __name__ == "__main__":
    main()
