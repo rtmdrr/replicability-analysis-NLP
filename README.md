@@ -1,5 +1,5 @@
 # replicability-analysis-NLP
-This code implements the methods described in [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500) for reporting replicability outcomes of an experiment that involves comparing two algorithms performance on multiple datasets. The implementation includes the **Bonferroni** and **Fisher** tests for counting the number of datasets for which one algorithm was significantly better than the other, and the **Holm** procedure for identifying  these datasets (or some of them). 
+This code implements the methods described in [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500) for reporting replicability outcomes of an experiment that involves comparing the performance of two algorithms on multiple datasets. The implementation includes the **Bonferroni** and **Fisher** tests for counting the number of datasets for which one algorithm was significantly better than the other, and the **Holm** procedure for identifying these datasets (or some of them). 
 
 ## Getting Started 
 
@@ -22,8 +22,12 @@ Enter significance level:
 0.05
 Enter p-value combination method (B for Bonferroni, F for Fisher):
 B
-k estimator is:
-Rejections list according to Holm procedure:
+k estimator is: 1
+Rejections list according to Holm procedure: [5]
 ```
 
+## Release History
+* 0.1.0 The first proper release.
 
+## Contact Information
+This file was written by Rotem Dror. For Questions you may email the first author of the paper [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500).
