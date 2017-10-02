@@ -1,5 +1,5 @@
 # replicability-analysis-NLP
-This code implements the methods described in [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500).
+This code implements the methods described in [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500):
 
 **"Replicability Analysis for Natural Language Processing: Testing Significance with Multiple Datasets."** Rotem Dror, Gili Baumer, Marina Bogomolov and Roi Reichart. *Accepted to the Transactions of the Association for Computational Linguistics (TACL)*.
 
@@ -25,7 +25,7 @@ The Input:
 The Algorithm will output:
 
 1. An estimation (K estimator) of the number of datasets with a significant effect according to the chosen procedure (Bonferroni or Fisher).
-2. The indices of the datasets recognized by the Holm procedure (Rejection list). Note: the first index in the output of the Holm procedure is 0.
+2. The indices of the datasets recognized by the Holm procedure (Rejection list).
 
 ### Example
 ```
@@ -37,7 +37,7 @@ Enter p-value combination method (B for Bonferroni, F for Fisher):
 B
 
 The k estimator for the number of datasets with effect is: 1
-The rejections list according to the Holm procedure is: [5]
+The rejections list according to the Holm procedure is: [6]
 ```
 
 ## Release History
