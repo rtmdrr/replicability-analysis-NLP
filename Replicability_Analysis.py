@@ -61,11 +61,20 @@ def calc_partial_cunjunction(pvalues, u, method ='B'):
 def main():
     pvals = raw_input("Enter p-values (input example: 0.168,0.297,0.357,0.019,0.218,0.001 ): ")
     pvals = [float(x) for x in pvals.split(',')]
+    datasets = {}
+    key = 0
+    for pval in pvals:
+        key+=1
+        datasets["dataset"+str(key)]=pval
+    print datasets
     alpha = raw_input("Enter significance level: ")
     alpha = float(alpha)
     method = raw_input("Enter p-value combination method (B for Bonferroni, F for Fisher): ")
     print "The k estimator for the number of datasets with effect is: ", find_k_estimator(pvals, alpha, method)
-    print "The rejections list according to the Holm procedure is: ", Holm(pvals, alpha)
+    rejlist = Holm(pvals, alpha)
+    print "The rejections list according to the Holm procedure is: "
+    for rej in rejlist:
+        print "dataset"+str(rej+1)
 
 if __name__ == "__main__":
    main()
