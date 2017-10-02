@@ -31,13 +31,18 @@ The Algorithm will output:
 ```
 Enter p-values :
 0.168,0.297,0.357,0.019,0.218,0.001
+
+{'dataset1': 0.168, 'dataset2': 0.297, 'dataset3': 0.357, 'dataset4': 0.019, 'dataset5': 0.218, 'dataset6': 0.001}
+
 Enter significance level: 
 0.05
+
 Enter p-value combination method (B for Bonferroni, F for Fisher):
 B
 
-The k estimator for the number of datasets with effect is: 1
-The rejections list according to the Holm procedure is: [6]
+The k estimator for the number of datasets with effect is:  1
+The rejections list according to the Holm procedure is: 
+dataset6
 ```
 
 ## Release History
