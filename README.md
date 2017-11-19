@@ -18,14 +18,15 @@ The Input:
 
 1. Write down a comma separated list of the p-values.
 2. Write down the desired significance level (alpha).
-3. Choose the desired test:
+The Algorithm will output 2 estimators:
 * **B** for Bonferroni if the datasets are dependent.
 * **F** for Fisher if the datasets are independent.
 
 The Algorithm will output:
 
-1. An estimation (K estimator) of the number of datasets with a significant effect according to the chosen procedure (Bonferroni or Fisher).
-2. The indices of the datasets recognized by the Holm procedure (Rejection list).
+1. An estimation (K estimator) of the number of datasets with a significant effect according to Bonferroni method. 
+2. An estimation (K estimator) of the number of datasets with a significant effect according to Fisher method.
+3. The indices of the datasets recognized by the Holm procedure (Rejection list).
 
 ### Example
 ```
@@ -37,16 +38,17 @@ Enter p-values :
 Enter significance level: 
 0.05
 
-Enter p-value combination method (B for Bonferroni, F for Fisher):
-B
+The Bonferroni-k estimator for the number of datasets with effect is:  1
 
-The k estimator for the number of datasets with effect is:  1
-The rejections list according to the Holm procedure is: 
+ The Fisher-k estimator for the number of datasets with effect is:  2
+
+ The rejections list according to the Holm procedure is: 
 dataset6
 ```
 
 ## Release History
 * 0.1.0 The first proper release.
+* 0.2.0 Output both k estimators.
 
 ## Contact Information
 This file and the code was written by Rotem Dror. The methods are described in the above paper [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500). For questions please write to: rtmdrr@campus.technion.ac.il
