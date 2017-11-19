@@ -66,13 +66,15 @@ def main():
     for pval in pvals:
         key+=1
         datasets["dataset"+str(key)]=pval
+    print '\n'
     print datasets
-    alpha = raw_input("Enter significance level: ")
+    alpha = raw_input("\n Enter significance level: ")
     alpha = float(alpha)
-    method = raw_input("Enter p-value combination method (B for Bonferroni, F for Fisher): ")
-    print "The k estimator for the number of datasets with effect is: ", find_k_estimator(pvals, alpha, method)
+    # method = raw_input("\n Enter p-value combination method (B for Bonferroni, F for Fisher): ")
+    print "\n The K-Bonferroni estimator for the number of datasets with effect is: ", find_k_estimator(pvals, alpha, 'B')
+    print "\n The K-Fisher estimator for the number of datasets with effect is: ", find_k_estimator(pvals, alpha, 'F')
     rejlist = Holm(pvals, alpha)
-    print "The rejections list according to the Holm procedure is: "
+    print "\n The rejections list according to the Holm procedure is: "
     for rej in rejlist:
         print "dataset"+str(rej+1)
 
