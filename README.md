@@ -28,6 +28,7 @@ The Algorithm will output:
 2. An estimation (K estimator) of the number of datasets with a significant effect according to Fisher method.
 3. The indices of the datasets recognized by the Holm procedure (Rejection list).
 
+* Notice that the number of datasets recognized by the Holm procedure should be exactly K-Bonferroni, K-Fisher can be equal\smaller\larger than this number (see paper for more details).
 ### Example
 ```
 Enter p-values :
