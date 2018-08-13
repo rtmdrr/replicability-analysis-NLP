@@ -47,6 +47,25 @@ The Bonferroni-k estimator for the number of datasets with effect is:  1
 dataset6
 ```
 
+## Citation
+If you make use of this software for research purposes, we'll appreciate citing the following:
+```
+@Article{Q17-1033,
+  author = 	"Dror, Rotem
+		and Baumer, Gili
+		and Bogomolov, Marina
+		and Reichart, Roi",
+  title = 	"Replicability Analysis for Natural Language Processing: Testing Significance with Multiple Datasets",
+  journal = 	"Transactions of the Association for Computational Linguistics",
+  year = 	"2017",
+  volume = 	"5",
+  pages = 	"471--486",
+  url = 	"http://aclweb.org/anthology/Q17-1033"
+}
+
+```
+
+
 ## Release History
 * 0.1.0 The first proper release.
 * 0.2.0 Output both k estimators.
