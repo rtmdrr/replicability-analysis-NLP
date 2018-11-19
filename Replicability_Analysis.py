@@ -33,7 +33,7 @@ def find_k_estimator(pvalues, alpha, method ='B'):
 def Holm(pvalues, alpha):
     k = find_k_estimator(pvalues, alpha)
     A = np.array(pvalues)
-    idx = np.argpartition(A, k)
+    idx = np.argpartition(A, k-1)
     return idx[:k]
 
 ### calc_partial_cunjunction(pvalues, u, method )
