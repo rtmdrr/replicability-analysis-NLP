@@ -71,5 +71,5 @@ If you make use of this software for research purposes, we'll appreciate citing 
 * 0.2.0 Output both k estimators.
 
 ## Contact Information
-This file and the code was written by Rotem Dror. The methods are described in the above paper [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500). For questions please write to: rtmdrr@campus.technion.ac.il
+This file and the code was written by Rotem Dror. The methods are described in the above paper [(Dror et al., 2017)](https://arxiv.org/abs/1709.09500). For questions please write to: rtmdrr@seas.upenn.edu
 
